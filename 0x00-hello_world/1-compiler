@@ -1,2 +1,2 @@
 #!/bin/bash
-Vi 1-compiler
+gcc -c $CFILE $FILE
