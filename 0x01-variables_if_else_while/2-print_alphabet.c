@@ -11,7 +11,7 @@ char ch = 'a';
 printf("Lower case English Alphabets:\n");
 while (ch <= 'z')
 {
-printf("%cc ", ch);
+printf("%c ", ch);
 ch++;
 }
 printf("\n");
