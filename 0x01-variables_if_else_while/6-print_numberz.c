@@ -1,21 +1,19 @@
-n - returns int value                                                                                     
+#include <stdio.h>
 
- *Return: zero                                                                                                 
+/**
+* main - returns int value
+*Return: zero
+*/
 
- */                                                                                                                                                                                                                        
+int main(void)
+{
+	int num = 48;
 
- int main (void)                                                                                                                                                                                                             
-
- {                                                                                                             
-
- int num = 48;                                                                                                                                                                                                
-
- while (num <= 57)                                                                                     
-
- {                                                                                                     
-
- putchar(num);                                                                                                                                                                                               
-
- }                                                                                                     
-
- putchar('')
+	while (num <= 57)
+	{
+		putchar(num);
+		num++;
+	}
+	putchar('\n');
+	return (0);
+}
