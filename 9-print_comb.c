@@ -13,11 +13,11 @@ int main(void)
 	{
 		putchar(num);
 		if (num != 57)
-		{
-			putchar(',');
-			putchar(' ');
+	{
+		putchar(',');
+		putchar(' ');
 		}
-		num++;
+			num++;
 	}
 	putchar('\n');
 	return (0);
