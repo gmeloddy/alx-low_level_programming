@@ -1,19 +1,25 @@
 #include <stdio.h>
 
 /**
-* main - returns int value
+*main - return integer value by defult
 *Return: zero
 */
 
 int main(void)
 {
-	int num = 48;
+int num = '0';
+char letter = 'a';
 
-	while (num <= 57)
-	{
-		putchar(num);
-		num++;
-	}
-	putchar('\n');
-	return (0);
+while (num <= '9')
+{
+	putchar(num);
+	num++;
+}
+while (letter <= 'f')
+{
+	putchar(letter);
+	letter++;
+}
+putchar('\n');
+return (0);
 }
