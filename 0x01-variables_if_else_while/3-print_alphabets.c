@@ -20,5 +20,6 @@ while (letter2 <= 'Z')
 	putchar(letter2);
 	letter2++;
 }
+putchar('\n');
 return (0);
 }
