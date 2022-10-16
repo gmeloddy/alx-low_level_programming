@@ -7,18 +7,18 @@
 
 int main(void)
 {
-char letter1;
-char letter2;
+char letter1 = 'a';
+char letter2 = 'A';
 
-while (letter1 = 'a')
+while (letter1 <= 'z')
 {
-	putchar(letter1)
-	letter1++
+	putchar(letter1);
+	letter1++;
 }
-while (letter2 = 'A')
+while (letter2 <= 'Z')
 {
-	putchar(letter2)
-	letter2++
+	putchar(letter2);
+	letter2++;
 }
 return (0);
 }
