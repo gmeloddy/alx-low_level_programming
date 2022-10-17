@@ -1,24 +1,26 @@
 #include <stdio.h>
 
 /**
-* main - returns int value
-*Return: zero
+* main - print all posible combination
+*
+*Return: Always zero
 */
 
 int main(void)
 {
-	int num = 48;
+	int num;
 
-	while (num <= 57)
+	for (num = 0; num <= 9; num++)
 	{
-		putchar(num);
-		if (num < 57)
-	{
+		putchar((num % 10) + '0');
+		if (num == 9)
+			continue;
+
 		putchar(',');
 		putchar(' ');
 		}
-			num++;
-	}
+
 	putchar('\n');
+
 	return (0);
 }
