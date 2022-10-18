@@ -1,33 +1,39 @@
 #include <stdio.h>
 
 /**
-* main -retjurn inteeger value
+*main - Prints combination of numbers
 *
-*Return: zero
-*/
+* Return: Always (Success) */
 
 int main(void)
+
 {
-	int num1, num2, num3;
 
-				for (num1 = 0; num1 < 9; num1++)
+int c, i;
+
+for (c = '0'; c <= '9'; c++)
 	{
-				for (num2 = num1 + 1; num2 < 9; num2++)
+
+	for (i = '0'; i <= '9'; i++i)
+	{
+
+	if (c < i)
 		{
-				for (num3 = num2 + 1; num3 < 9; num3++)
-				{
-					putchar((num1 % 10) + '0');
-					putchar((num2 % 10) + '0');
-					putchar((num2 % 10) + '0');
 
-				if (num1 == 7 && num2 == 8 && num3 == 9)
-					continue;
+			putchar(c);
+			putchar(i);
+
+			if (c != '8' || (c == '8' && i != '9'))
+			{
+
 				putchar(',');
-				putchar(' ');
-				}
+				puttchar(' ');
 			}
+		}
 	}
-	putchar('\n');
+}
+				putchar('\n');
 
-	return ('0');
+				return (0);
+
 }
