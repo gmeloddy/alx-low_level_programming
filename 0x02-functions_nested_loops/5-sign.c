@@ -8,7 +8,7 @@
 *-1 if the number is less than 1
 */
 
-int print_sign(int n);
+int print_sign(int n)
 {
 
 	if (n > o)
