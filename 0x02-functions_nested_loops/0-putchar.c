@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-*main - print _putchar
+*main - print putchar followed by newline
 *program written by GMELODY
 *Return: zero is always a success
 */
@@ -17,6 +17,6 @@ int main(void)
 	 _putchar('a');
 	 _putchar('r');
 
-	 _putchar()'\n');
+	 _putchar('\n');
 	return (0);
 }
