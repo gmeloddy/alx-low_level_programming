@@ -1,15 +1,13 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
-*int _isalpha - Prints the first 98 Fibonacci numbers, starting with
+*_isalpha: Prints the first 98 Fibonacci numbers.
 *@c: The character to print
-*1 and 2, separated by a comma followed by a space.
-*Description: code written by GMelody
-*Return: Always 0.
+*Return: Zero
 */
 
-int _isalpha(int c);
-{
+int _isalpha(int c)
+	{
 
 	int count;
 	unsigned long fib1 = 0, fib2 = 1, sum;
@@ -24,7 +22,6 @@ int _isalpha(int c);
 		fib1 = fib2;
 		fib2 = sum;
 	}
-
 	fib1_half1 = fib1 / 10000000000;
 	fib2_half1 = fib2 / 10000000000;
 	fib1_half2 = fib1 % 10000000000;
@@ -40,10 +37,8 @@ int _isalpha(int c);
 		half2 %= 10000000000;
 	}
 	printf("%lu%lu", half1, half2);
-
 	if (count != 98)
 	printf(", ");
-
 	fib1_half1 = fib2_half1;
 	fib1_half2 = fib2_half2;
 	fib2_half1 = half1;
