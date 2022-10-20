@@ -1,14 +1,16 @@
 #include <stdio.h>
 
 /**
-* main - Prints the first 98 Fibonacci numbers, starting with
+*int _isalpha - Prints the first 98 Fibonacci numbers, starting with
+*@c: The character to print
 *1 and 2, separated by a comma followed by a space.
-*Description: is written by Honeydropjahbless
+*Description: code written by GMelody
 *Return: Always 0.
 */
 
-int main(void)
+int _isalpha(int c);
 {
+
 	int count;
 	unsigned long fib1 = 0, fib2 = 1, sum;
 	unsigned long fib1_half1, fib1_half2, fib2_half1, fib2_half2;
