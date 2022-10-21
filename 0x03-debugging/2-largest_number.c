@@ -22,7 +22,7 @@ int largest;
 	{
 		largest = b;
 	}
-	
+
 	else
 	{
 		largest = c;
