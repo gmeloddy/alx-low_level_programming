@@ -1,26 +1,23 @@
 #include <stdio.h>
-
 /**
-* main - print all posible combination
-*
-*Return: Always zero
-*/
+ * main - Entry point
+ *
+ * Return: Always 0 (success)
+ */
 
 int main(void)
 {
-	int num;
+	int a;
 
-	for (num = 0; num <= 9; num++)
+	for (a = 0; a < 10; a++)
 	{
-		putchar((num % 10) + '0');
-		if (num == 9)
-			continue;
-
-		putchar(',');
-		putchar(' ');
+		putchar(a + '0');
+		if (a < 9)
+		{
+			putchar(',');
+			putchar(' ');
 		}
-
+	}
 	putchar('\n');
-
 	return (0);
 }
