@@ -1,35 +1,37 @@
 #include <stdio.h>
-
 /**
-*main - prints all different combination of two digits
-*Return: zero
-*/
-
+ * main-program entry point
+ * Return: 0 success, non zero fail
+ */
 int main(void)
 {
-	int units = 0;
-	int tens = 0;
+	int i, k = '0', j;
 
-	for (tens = '0'; tens <= '9'; tens++)
+	for (i = '0'; i <= '9'; i++)
 	{
-		for (units = '0'; units <= '9'; units++)
+		for (j = k; j <= '9'; j++)
 		{
-			if (!((units == tens) || (tens > units)))
+			if (i != j)
 			{
-				putchar(tens);
-				putchar(units);
-				if (!(units == '9' && tens == '8'))
-				{
-
+				putchar(i);
+				putchar(j);
+			}
+			if (i == j)
+			{
+				continue;
+			}
+			if (i == '8' && j == '9')
+			{
+				break;
+			}
+			else
+			{
 				putchar(',');
 				putchar(' ');
-
-				}
 			}
 		}
+		k++;
 	}
-
 	putchar('\n');
 	return (0);
 }
-
