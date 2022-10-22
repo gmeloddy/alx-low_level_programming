@@ -1,9 +1,8 @@
 #include <stdio.h>
 /**
- * main-program entry point
- *
- * Return: 0 success, non zero fail
- */
+* main-program entry point
+* Return: 0 success, non zero fail
+*/
 int main(void)
 {
 	int m, i, j;
@@ -12,17 +11,19 @@ int main(void)
 	{
 		for (j = '0'; j <= '9'; j++)
 		{
-			for (m = '0'; m <= '9'; m++)
+
+		for (m = '0'; m <= '9'; m++)
+		{
+			if (i < j && j < m)
 			{
-				if (i < j && j < m)
+				putchar(i);
+				putchar(j);
+				putchar(m);
+
+				if (i == '7' && j == '8' && m == '9')
 				{
-					putchar(i);
-					putchar(j);
-					putchar(m);
-					if (i == '7' && j == '8' && m == '9')
-					{
-						break;
-					}
+					break;
+				}
 					else
 					{
 						putchar(',');
